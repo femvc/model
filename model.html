@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>basemodel - A simple data model.</title>
+<script type="text/javascript" src="bui.js"></script>
+<script type="text/javascript" src="base.js"></script>
+<script type="text/javascript" src="eventdispatcher.js"></script>
+<script type="text/javascript" src="basemodel.js"></script>
+<script type="text/javascript">
+<!--
+
+function doit(){
+    //Todo
+    var d = new base.BaseModel();
+    d.on('change:name', function(oldValue, newValue){
+        alert(oldValue+'=='+newValue);
+    });
+    d.set('name', 123);
+}
+
+//-->
+</script>
+</head>
+
+<body><button type="button" onclick="doit()">doit</button>
+
+</body>
+
+</html>
